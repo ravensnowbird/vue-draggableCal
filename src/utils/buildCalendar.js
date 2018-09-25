@@ -78,7 +78,7 @@ export function createPrependArray(PREPEND_MONTHS) {
       index = 11;
       year--;
     }
-    prepended.unshift({monthNumber: index, fullYear: year, past: true});
+    prepended.unshift({monthNumber: index, fullYear: year});
   }
   prepended.pop();
   return prepended;
