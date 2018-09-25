@@ -28,6 +28,8 @@ export function computeDaysFromMonths(NUMBER_OF_MONTH) {
 export function createDaysArray(NUMBER_OF_DAYS, fullMonths) {
   if (NUMBER_OF_DAYS <= 0) return [];
   let currentConstructorDate = new Date();
+  currentConstructorDate.setDate(currentConstructorDate.getDate() - NUMBER_OF_DAYS/2);
+
   const days = [];
 
   for (let i = 0; i < NUMBER_OF_DAYS; i++) {
